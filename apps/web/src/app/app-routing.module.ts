@@ -11,6 +11,14 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'about',
+    pathMatch: 'full',
+    loadChildren: () =>
+      import('@nx-sandbox/web/about-page').then(
+        (module) => module.WebAboutPageModule
+      ),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/static/404'

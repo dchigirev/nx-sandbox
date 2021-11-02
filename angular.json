@@ -283,6 +283,32 @@
       },
       "tags": []
     },
+    "web-about-page": {
+      "projectType": "library",
+      "root": "libs/web/about-page",
+      "sourceRoot": "libs/web/about-page/src",
+      "prefix": "nx-sandbox",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/about-page"],
+          "options": {
+            "jestConfig": "libs/web/about-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/about-page/src/**/*.ts",
+              "libs/web/about-page/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "web-e2e": {
       "root": "apps/web-e2e",
       "sourceRoot": "apps/web-e2e/src",
