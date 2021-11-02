@@ -61,7 +61,8 @@
               "browserTarget": "admin:build:production"
             },
             "development": {
-              "browserTarget": "admin:build:development"
+              "browserTarget": "admin:build:development",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"
@@ -247,7 +248,8 @@
               "browserTarget": "web:build:production"
             },
             "development": {
-              "browserTarget": "web:build:development"
+              "browserTarget": "web:build:development",
+              "port": 4200
             }
           },
           "defaultConfiguration": "development",
@@ -309,6 +311,32 @@
       },
       "tags": [],
       "implicitDependencies": ["web"]
+    },
+    "web-home-page": {
+      "projectType": "library",
+      "root": "libs/web/home-page",
+      "sourceRoot": "libs/web/home-page/src",
+      "prefix": "nx-sandbox",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/home-page"],
+          "options": {
+            "jestConfig": "libs/web/home-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/home-page/src/**/*.ts",
+              "libs/web/home-page/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }
