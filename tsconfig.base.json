@@ -16,6 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@nx-sandbox/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nx-sandbox/shared/entities": ["libs/shared/entities/src/index.ts"],
+      "@nx-sandbox/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@nx-sandbox/web/about-page": ["libs/web/about-page/src/index.ts"],
       "@nx-sandbox/web/home-page": ["libs/web/home-page/src/index.ts"]
     }
