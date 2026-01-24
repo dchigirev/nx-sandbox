@@ -10,6 +10,6 @@ bootstrapApplication(App, appConfig).catch((err) => console.error(err));
 // import { importProvidersFrom } from '@angular/core';
 // import { IonicModule } from '@ionic/angular';
 
-// bootstrapApplication(AppComponent, {
+// bootstrapApplication(App, {
 //   providers: [importProvidersFrom(IonicModule.forRoot())],
 // }).catch((err) => console.error(err));

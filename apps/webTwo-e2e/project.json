@@ -1,0 +1,9 @@
+{
+  "name": "webTwo-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/webTwo-e2e/src",
+  "implicitDependencies": ["webTwo"],
+  "// targets": "to see all targets run: nx show project webTwo-e2e --web",
+  "targets": {}
+}
