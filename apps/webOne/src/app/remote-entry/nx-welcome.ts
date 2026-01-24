@@ -5,8 +5,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-nx-welcome',
   imports: [CommonModule],
   template: `
-
-  <h1 class="text-3xl font-bold underline color-indigo-500">Hello world! ONE</h1>
+    <div class="text-red-500 bg-red-50">Test Tailwind Works</div>
+    <h1 class="text-3xl font-bold underline color-red-500">Hello world! ONE</h1>
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      This is a starter component and can be deleted.
