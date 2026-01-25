@@ -28,7 +28,8 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": ["theme/*", "packages/theme/*"]
     },
     {
       "plugin": "@nx/docker",
@@ -66,6 +67,15 @@
         "targetName": "test"
       },
       "exclude": ["api-e2e/**/*", "apps/api-e2e/**/*"]
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": ["theme/*", "packages/theme/*"],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {

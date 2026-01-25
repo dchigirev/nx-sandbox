@@ -22,7 +22,8 @@
       "@api/*": ["apps/api/src/*"],
       "@nx-sandbox/ui": ["packages/ui/src/index.ts"],
       "webOne/Routes": ["apps/webOne/src/app/remote-entry/entry.routes.ts"],
-      "webTwo/Routes": ["apps/webTwo/src/app/remote-entry/entry.routes.ts"]
+      "webTwo/Routes": ["apps/webTwo/src/app/remote-entry/entry.routes.ts"],
+      "@nx-sandbox/theme": ["packages/theme/src/index.ts"]
     }
   }
 }

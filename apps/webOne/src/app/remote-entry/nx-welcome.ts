@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-nx-welcome',
   imports: [CommonModule],
   template: `
-    <div class="text-red-500 bg-red-50">Test Tailwind Works</div>
+    <div class="text-red-500 bg-red-50 p-10">Test ONE TWO THREE Tailwind Works</div>
     <h1 class="text-3xl font-bold underline color-red-500">Hello world! ONE</h1>
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
