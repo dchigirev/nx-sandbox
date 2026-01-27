@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@ionic/angular/css/core.css";
+@use "@ionic/angular/css/normalize.css";
+@use "@ionic/angular/css/structure.css";
+@use "@ionic/angular/css/typography.css";
+
+/* по желанию */
+@use "@ionic/angular/css/padding.css";
+@use "@ionic/angular/css/flex-utils.css";
+
+@use "../../../packages/theme/src/lib/tailwind-theme.css";
+@use 'tailwindcss';
