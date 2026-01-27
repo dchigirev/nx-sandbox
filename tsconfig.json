@@ -2,5 +2,51 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/web-shell-e2e"
+    },
+    {
+      "path": "./libs/shared/web-ui"
+    },
+    {
+      "path": "./apps/mobile-e2e"
+    },
+    {
+      "path": "./apps/webOne-e2e"
+    },
+    {
+      "path": "./apps/webTwo-e2e"
+    },
+    {
+      "path": "./packages/theme"
+    },
+    {
+      "path": "./apps/web-shell"
+    },
+    {
+      "path": "./apps/api-e2e"
+    },
+    {
+      "path": "./apps/web-e2e"
+    },
+    {
+      "path": "./apps/mobile"
+    },
+    {
+      "path": "./packages/ui"
+    },
+    {
+      "path": "./apps/webOne"
+    },
+    {
+      "path": "./apps/webTwo"
+    },
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./apps/web"
+    }
+  ]
 }

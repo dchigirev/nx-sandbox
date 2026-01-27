@@ -23,5 +23,10 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-  "files": ["src/app/remote-entry/entry.routes.ts"]
+  "files": ["src/app/remote-entry/entry.routes.ts"],
+  "references": [
+    {
+      "path": "../../libs/shared/web-ui/tsconfig.lib.json"
+    }
+  ]
 }

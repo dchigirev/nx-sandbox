@@ -22,5 +22,13 @@
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
+  ],
+  "references": [
+    {
+      "path": "../webOne/tsconfig.app.json"
+    },
+    {
+      "path": "../webTwo/tsconfig.app.json"
+    }
   ]
 }
