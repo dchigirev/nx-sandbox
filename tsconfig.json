@@ -34,9 +34,6 @@
       "path": "./apps/mobile"
     },
     {
-      "path": "./packages/ui"
-    },
-    {
       "path": "./apps/webOne"
     },
     {

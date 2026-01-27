@@ -22,9 +22,5 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-  "references": [
-    {
-      "path": "../../packages/ui/tsconfig.lib.json"
-    }
-  ]
+  "references": []
 }
