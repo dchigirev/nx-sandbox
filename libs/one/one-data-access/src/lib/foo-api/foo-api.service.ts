@@ -6,7 +6,7 @@ import {
   IGetRequest,
   IUpdateRequest,
 } from '@nx-sandbox/shared-models';
-import { IFoo, IFooLinkToBarRequest } from '@nx-sandbox/one-models';
+import { IFoo } from '@nx-sandbox/one-models';
 
 @Injectable({
   providedIn: 'root',
@@ -31,13 +31,6 @@ export class FooApiService {
 
   public get(req: IGetRequest) {
     console.log('Foo Get Req = ', req);
-    return of();
-  }
-
-  /** Custom */
-
-  public linkToBar(req: IFooLinkToBarRequest) {
-    console.log('Foo Link To Bar Req = ', req);
     return of();
   }
 }
