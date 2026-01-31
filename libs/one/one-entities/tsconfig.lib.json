@@ -23,5 +23,9 @@
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
+  ],
+   "references": [
+    { "path": "../../shared/shared-models" },
+    { "path": "../one-models" }
   ]
 }
