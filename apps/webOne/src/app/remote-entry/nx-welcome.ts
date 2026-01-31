@@ -1,9 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import {Button} from '@nx-sandbox/web-ui';
+import { Button, SelectComponent } from '@nx-sandbox/web-ui';
 
 @Component({
   selector: 'app-nx-welcome',
-  imports: [Button],
+  imports: [Button, SelectComponent],
   templateUrl: './nx-welcome.template.html',
   styles: [],
   encapsulation: ViewEncapsulation.None,
