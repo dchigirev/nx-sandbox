@@ -1,3 +1,3 @@
 export * from './lib/web-ui/web-ui';
 export * from './lib/button';
-export * from './lib/select';
+export * from './lib/input';

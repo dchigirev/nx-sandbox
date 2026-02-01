@@ -25,6 +25,8 @@
     "src/test-setup.ts"
   ],
   "references": [
-    { "path": "../../shared/shared-models" }
+    {
+      "path": "../../shared/shared-models/tsconfig.lib.json"
+    }
   ]
 }

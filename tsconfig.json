@@ -44,6 +44,21 @@
     },
     {
       "path": "./apps/web"
+    },
+    {
+      "path": "./libs/shared/shared-models"
+    },
+    {
+      "path": "./libs/shared/mobile-ui"
+    },
+    {
+      "path": "./libs/one/one-data-access"
+    },
+    {
+      "path": "./libs/one/one-entities"
+    },
+    {
+      "path": "./libs/one/one-models"
     }
   ]
 }
