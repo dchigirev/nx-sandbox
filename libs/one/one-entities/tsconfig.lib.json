@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc",
+    "outDir": "../../../dist/out-tsc/libs/one-entities",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -24,8 +24,5 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-   "references": [
-    { "path": "../../shared/shared-models/tsconfig.lib.json" },
-    { "path": "../one-models/tsconfig.lib.json" }
-  ]
+  "references": []
 }
