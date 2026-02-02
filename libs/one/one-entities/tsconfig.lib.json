@@ -24,5 +24,9 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../one-models/tsconfig.lib.json"
+    }
+  ]
 }

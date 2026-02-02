@@ -25,6 +25,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/one/one-entities/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/shared/mobile-ui/tsconfig.lib.json"
     }
   ]
