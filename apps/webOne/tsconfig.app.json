@@ -26,6 +26,9 @@
   "files": ["src/app/remote-entry/entry.routes.ts"],
   "references": [
     {
+      "path": "../../libs/one/one-models/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/one/one-entities/tsconfig.lib.json"
     },
     {

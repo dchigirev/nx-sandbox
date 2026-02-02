@@ -23,5 +23,10 @@
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
+  ],
+  "references": [
+    {
+      "path": "../core-ui/tsconfig.lib.json"
+    }
   ]
 }

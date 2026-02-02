@@ -29,7 +29,8 @@
       "@nx-sandbox/one-data-access": ["libs/one/one-data-access/src/index.ts"],
       "@nx-sandbox/one-models": ["libs/one/one-models/src/index.ts"],
       "@nx-sandbox/one-entities": ["libs/one/one-entities/src/index.ts"],
-      "@nx-sandbox/shared-models": ["libs/shared/shared-models/src/index.ts"]
+      "@nx-sandbox/shared-models": ["libs/shared/shared-models/src/index.ts"],
+      "@nx-sandbox/core-ui": ["libs/shared/core-ui/src/index.ts"]
     }
   }
 }

@@ -1,10 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/libs/web-ui",
+    "outDir": "../../../dist/out-tsc",
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
     "inlineSources": true,
     "types": []
   },
@@ -23,10 +22,5 @@
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
-  ],
-  "references": [
-    {
-      "path": "../core-ui/tsconfig.lib.json"
-    }
   ]
 }

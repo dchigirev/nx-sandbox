@@ -8,7 +8,7 @@ import {
   IonButton,
 } from '@ionic/angular/standalone';
 import { InputComponent } from '@nx-sandbox/mobile-ui';
-import { FooViewComponent } from '@nx-sandbox/one-entities';
+import { FooViewComponent, FooFormMobileComponent } from '@nx-sandbox/one-entities';
 import { fooMock, IFoo } from '@nx-sandbox/one-models';
 
 @Component({
@@ -23,6 +23,7 @@ import { fooMock, IFoo } from '@nx-sandbox/one-models';
     IonButton,
     InputComponent,
     FooViewComponent,
+    FooFormMobileComponent,
   ],
   templateUrl: './app.html',
 })

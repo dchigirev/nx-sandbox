@@ -1,14 +1,13 @@
-import { Component, model } from '@angular/core';
-import { FormValueControl } from '@angular/forms/signals';
+import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { InputCoreComponent } from '@nx-sandbox/core-ui';
 
 @Component({
   selector: 'lib-input',
   standalone: true,
   templateUrl: './input.html',
-  imports: [IonicModule]
+  imports: [IonicModule],
 })
-export class InputComponent implements FormValueControl<string> {
-  /** The current input value */
-  value = model('');
+export class InputComponent extends InputCoreComponent {
+
 }

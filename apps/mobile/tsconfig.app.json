@@ -25,6 +25,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/one/one-models/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/one/one-entities/tsconfig.lib.json"
     },
     {
