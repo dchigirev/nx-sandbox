@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import {
-  IonApp,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonButton,
-} from '@ionic/angular/standalone';
+import { IonicModule } from '@ionic/angular';
+// import {
+//   IonApp,
+//   IonHeader,
+//   IonToolbar,
+//   IonTitle,
+//   IonContent,
+//   IonButton,
+//   IonInput,
+// } from '@ionic/angular/standalone';
 import { InputComponent } from '@nx-sandbox/mobile-ui';
 import { FooViewComponent, FooFormMobileComponent } from '@nx-sandbox/one-entities';
 import { fooMock, IFoo } from '@nx-sandbox/one-models';
@@ -15,12 +17,7 @@ import { fooMock, IFoo } from '@nx-sandbox/one-models';
   selector: 'app-root',
   standalone: true,
   imports: [
-    IonApp,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonButton,
+    IonicModule,
     InputComponent,
     FooViewComponent,
     FooFormMobileComponent,
