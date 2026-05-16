@@ -32,6 +32,9 @@
       "path": "../../shared/mobile-ui/tsconfig.lib.json"
     },
     {
+      "path": "../../shared/shared-models/tsconfig.lib.json"
+    },
+    {
       "path": "../one-models/tsconfig.lib.json"
     }
   ]
