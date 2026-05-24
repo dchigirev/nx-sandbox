@@ -10,7 +10,4 @@ export abstract class SelectCoreComponent implements FormValueControl<string> {
 
   public readonly options = input.required<IUIOption[]>();
 
-  constructor() {
-    console.log('constructor: Select Core Component');
-  }
 }

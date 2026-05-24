@@ -7,7 +7,4 @@ export abstract class InputCoreComponent implements FormValueControl<string> {
   public label = input<string>('Input Label');
   public placeholder = input<string>('Input Placeholder');
 
-  constructor() {
-    console.log('constructor: Input Core Component');
-  }
 }

@@ -109,6 +109,14 @@ nx g @nx/angular:library <name> --directory=libs/<scope>
 
 ---
 
+## Where to create things
+
+- **Applications** → always inside `apps/` (e.g. `apps/hangar`)
+- **Libraries** → always inside `libs/` under the appropriate scope (e.g. `libs/shared/web-ui`)
+- Never create apps at the workspace root
+
+---
+
 ## Conventions
 
 - **Lib tagging**: scope (`shared`, `one`, `two`) + type (`feature`, `ui`, `data-access`, `model`, `entity`)
