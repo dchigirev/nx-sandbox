@@ -1,0 +1,9 @@
+{
+  "name": "hangar-e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "hangar-e2e/src",
+  "implicitDependencies": ["hangar"],
+  "// targets": "to see all targets run: nx show project hangar-e2e --web",
+  "targets": {}
+}

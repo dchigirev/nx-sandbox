@@ -1,0 +1,32 @@
+.menu-item {
+  width: 100%;
+  padding: 11px 32px 11px 0;
+  text-align: left;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    padding-left 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+
+  &:hover {
+    padding-left: 14px;
+    border-left-color: var(--color-brand);
+    color: var(--color-text);
+  }
+
+  &.primary {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  &.exit:hover {
+    border-left-color: var(--color-danger);
+    color: var(--color-text-danger);
+  }
+}

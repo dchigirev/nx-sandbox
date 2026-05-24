@@ -1,0 +1,31 @@
+<div class="relative h-screen w-full overflow-hidden flex">
+
+  <!-- Background -->
+  <div class="absolute inset-0 bg-stone-900 bg-top bg-no-repeat" style="background-image: url('/bg-main.png'); background-size: 100% auto"></div>
+
+  <!-- Right panel -->
+  <aside class="relative z-10 ml-auto w-[400px] h-full bg-white/64 backdrop-blur-sm flex flex-col px-10 py-12">
+
+    <!-- Header -->
+    <header>
+      <p class="text-text-subtle text-12 tracking-[0.15em] uppercase mb-5">Нео-Луна · Сезон 1</p>
+      <h1 class="text-text text-52 font-bold leading-none">SUN<br>SEED</h1>
+    </header>
+
+    <!-- Main menu -->
+    <nav class="flex flex-col mt-14 mb-auto">
+      <a routerLink="/hangar" class="menu-item primary">Ангар</a>
+      <button class="menu-item">Продолжить</button>
+      <button class="menu-item">Инвентарь</button>
+      <button class="menu-item">Настройки</button>
+      <button class="menu-item exit">Выход</button>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="pt-6 border-t border-border">
+      <p class="text-text-subtle text-12">v0.1.0-alpha</p>
+    </footer>
+
+  </aside>
+
+</div>

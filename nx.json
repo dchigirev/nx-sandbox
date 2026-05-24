@@ -114,6 +114,9 @@
       "inputs": ["default", "^production"]
     }
   },
+  "sync": {
+    "applyChanges": true
+  },
   "generators": {
     "@nx/angular:application": {
       "e2eTestRunner": "playwright",

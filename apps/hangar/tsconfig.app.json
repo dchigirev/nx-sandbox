@@ -1,16 +1,14 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
+    "outDir": "../dist/out-tsc",
     "types": [],
     "target": "ES2020"
   },
   "include": ["src/**/*.ts"],
   "exclude": [
-    "jest.config.ts",
-    "src/test-setup.ts",
-    "src/**/*.test.ts",
     "src/**/*.spec.ts",
+    "src/**/*.test.ts",
     "vite.config.ts",
     "vite.config.mts",
     "vitest.config.ts",
@@ -23,15 +21,5 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-  "references": [
-    {
-      "path": "../webOne/tsconfig.app.json"
-    },
-    {
-      "path": "../webTwo/tsconfig.app.json"
-    },
-    {
-      "path": "../hangar/tsconfig.app.json"
-    }
-  ]
+  "files": ["src/app/remote-entry/entry.routes.ts"]
 }

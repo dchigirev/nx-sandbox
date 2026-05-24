@@ -65,6 +65,12 @@
     },
     {
       "path": "./libs/one/one-features"
+    },
+    {
+      "path": "./apps/hangar-e2e"
+    },
+    {
+      "path": "./apps/hangar"
     }
   ]
 }

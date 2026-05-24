@@ -2,7 +2,10 @@
   "name": "@nx-sandbox/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "shell": "nx serve web-shell",
+    "hangar": "nx serve hangar"
+  },
   "private": true,
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "2.1.3",

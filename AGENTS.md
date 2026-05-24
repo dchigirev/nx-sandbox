@@ -1,4 +1,4 @@
-# AGENTS.md
+-# AGENTS.md
 
 ## Project overview
 
@@ -10,12 +10,15 @@ Players manage loadouts and squads out-of-match (meta loop), then drop into sess
 
 ## Monorepo structure
 
+**All applications must be created inside the `apps/` directory.**
+
 ```
 apps/
   web-shell/       # Module Federation host — entry point, routing shell
   web/             # MF remote — currently the main web experience
   webOne/          # MF remote
   webTwo/          # MF remote
+  hangar/          # MF remote — Preparation phase (phase 1): unit viewer, loadout, rocket loading
   mobile/          # Ionic/Capacitor mobile client
   api/             # NestJS backend
 libs/
@@ -35,22 +38,28 @@ packages/
 
 ---
 
-## Planned app split (two-app architecture)
+## App architecture (three-app split)
 
-### App 1 — Shell / Lobby (`web-shell` + remotes)
-Handles everything **outside a match**:
-- Main menu, settings, player profile
-- Inventory and loadout management (extraction meta loop)
-- Matchmaking / squad formation
+Match flow: `shell → prep → game → shell (results)`
+
+### `web-shell` — Shell (MF host)
+Always loaded. Handles everything outside a match:
+- Main menu, start page, settings (graphics, sound, controls), player profile
+- Matchmaking / squad formation entry point
 - Tech: Angular 21 + NgRx + Tailwind
 
-### App 2 — Game (`game` MF remote, to be created)
-Handles everything **inside a match**:
+### `hangar` — Preparation phase (MF remote, `apps/hangar/`, port 4203)
+Loaded when a match starts, before the game:
+- Unit viewer (3D via Babylon.js, run outside Angular zone), loadout selection, rocket loading
+- UI-heavy; Angular handles all menus/panels; game viewport is a plain canvas element
+- Unloads when the player confirms loadout and transitions to game
+
+### `game` — Game phase (MF remote, to be created)
+Loaded after prep. Handles everything inside a match:
 - Game loop, canvas rendering (Phaser / PixiJS / BabylonJS / raw WebGL)
 - Tower placement, wave logic, extraction objectives
 - Angular is **not used** inside the game viewport — direct canvas/WebGL
 - WebWorkers for pathfinding and physics
-- Lazy-loaded as a Module Federation remote; mounted only when a match starts
 - Deployed and cached independently (game assets can be 50+ MB)
 
 ---
