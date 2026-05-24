@@ -26,13 +26,13 @@
   ],
   "references": [
     {
-      "path": "../../shared/web-ui/tsconfig.lib.json"
+      "path": "../../ui/web-ui/tsconfig.lib.json"
     },
     {
-      "path": "../../shared/mobile-ui/tsconfig.lib.json"
+      "path": "../../ui/mobile-ui/tsconfig.lib.json"
     },
     {
-      "path": "../../shared/shared-models/tsconfig.lib.json"
+      "path": "../../ui/core-ui/tsconfig.lib.json"
     },
     {
       "path": "../one-models/tsconfig.lib.json"

@@ -32,7 +32,7 @@
       "path": "../../libs/one/one-entities/tsconfig.lib.json"
     },
     {
-      "path": "../../libs/shared/web-ui/tsconfig.lib.json"
+      "path": "../../libs/ui/web-ui/tsconfig.lib.json"
     }
   ]
 }

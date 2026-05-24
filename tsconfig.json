@@ -7,9 +7,6 @@
       "path": "./apps/web-shell-e2e"
     },
     {
-      "path": "./libs/shared/web-ui"
-    },
-    {
       "path": "./apps/mobile-e2e"
     },
     {
@@ -49,9 +46,6 @@
       "path": "./libs/shared/shared-models"
     },
     {
-      "path": "./libs/shared/mobile-ui"
-    },
-    {
       "path": "./libs/one/one-data-access"
     },
     {
@@ -61,9 +55,6 @@
       "path": "./libs/one/one-models"
     },
     {
-      "path": "./libs/shared/core-ui"
-    },
-    {
       "path": "./libs/one/one-features"
     },
     {
@@ -71,6 +62,15 @@
     },
     {
       "path": "./apps/hangar"
+    },
+    {
+      "path": "./libs/ui/mobile-ui"
+    },
+    {
+      "path": "./libs/ui/core-ui"
+    },
+    {
+      "path": "./libs/ui/web-ui"
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { Directive, input, model } from '@angular/core';
 import { FormValueControl } from '@angular/forms/signals';
-import { IUIOption } from '@nx-sandbox/shared-models';
+import { IUIOption } from '../_models/index.js';
 
 @Directive()
 export abstract class SelectCoreComponent implements FormValueControl<string> {

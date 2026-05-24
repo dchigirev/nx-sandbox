@@ -1,7 +1,7 @@
 {
   "name": "web-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/web-ui/src",
+  "sourceRoot": "libs/ui/web-ui/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],
@@ -10,7 +10,7 @@
       "executor": "@nx/vitest:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../../coverage/libs/shared/web-ui"
+        "reportsDirectory": "../../../coverage/libs/ui/web-ui"
       }
     },
     "lint": {

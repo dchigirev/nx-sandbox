@@ -1,7 +1,7 @@
 import { Directive, input, signal } from '@angular/core';
 import { form } from '@angular/forms/signals';
 import { IFoo } from '@nx-sandbox/one-models';
-import { IUIOption } from '@nx-sandbox/shared-models';
+import { IUIOption } from '@nx-sandbox/core-ui';
 
 @Directive()
 export class FooFormCoreComponent {
